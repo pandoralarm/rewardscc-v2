@@ -3,13 +3,17 @@
     font-family: var(--global-font-family-alternative);
     box-shadow: none;
     height: var(--global-header-height);
-    background-color: var(--global-colors-black);
+    background-color: var(--global-colors-white);
     padding: 0;
     display: flex;
     box-shadow: 0 2px 3px var(--global-shadow-elephant);
 
     &-sidebar {
-        background-color: var(--global-colors-black);
+        background-color: var(--global-colors-cararra);
+
+        .clean-btn {
+            color: var(--global-colors-black);
+        }
     }
 
     &__inner {
@@ -26,7 +30,7 @@
             timing-function: ease-out;
             duration: 0.3s;
         }
-        color: var(--global-colors-white);
+        color: var(--global-colors-black);
 
         &:hover {
             color: var(--global-colors-nebula);
@@ -40,7 +44,7 @@
     }
 
     &__brand {
-        background-color: var(--global-colors-black);
+        // background-color: var(--global-colors-black);
         height: auto;
         margin: 0;
     }
@@ -70,7 +74,7 @@
         display: none;
         width: 122px;
         height: 100%;
-        background-color: var(--global-colors-white);
+        background-color: var(--global-colors-black);
         padding-left: 40px;
         padding-right: 20px;
         font-family: var(--global-font-family);
@@ -100,7 +104,7 @@
     &__toggle {
         position: absolute;
         right: 0;
-        background-color: var(--global-colors-black);
+        background-color: transparent;
         border-radius: 50%;
         width: var(--global-mobile-nav-button-size);
         height: var(--global-mobile-nav-button-size);
@@ -109,6 +113,7 @@
         justify-content: center;
         padding: 9px;
         margin-right: 20px;
+        filter: invert(100%);
 
         @include media(desktop up) {
             display: none;

@@ -2,7 +2,7 @@
     > p {
         @extend .paragraph-size--medium;
         font-weight: 500;
-        color: var(--global-colors-white);
+        color: var(--global-colors-black);
 
         code {
             padding: 2px 5px;
@@ -27,7 +27,7 @@
         @extend .paragraph-size--medium;
         padding: 5px 0;
         font-weight: 500;
-        color: var(--global-colors-white);
+        color: var(--global-colors-black);
 
         > p {
             margin-top: 0;
@@ -41,7 +41,7 @@
 
     blockquote {
         @extend .paragraph-size--medium;
-        background-color: var(--global-colors-white);
+        background-color: var(--global-colors-cararra);
         border-color: var(--global-colors-mandy);
         font-weight: 500;
         color: var(--global-colors-black);
@@ -60,11 +60,11 @@
         font-family: var(--global-block-family-code);
         font-weight: 500;
         border-radius: var(--global-border-radius);
-        color: var(--global-colors-white);
+        color: var(--global-colors-black);
     }
 
     pre {
-        background-color: var(--global-colors-white);
+        background-color: var(--global-colors-cararra);
     }
     pre code {
         padding: 20px;

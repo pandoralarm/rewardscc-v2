@@ -6,14 +6,14 @@
     #__docusaurus {
         --bottom-spacing: 60px;
 
-        .breadcrumbs__item::after {
-            filter: invert(100%);
-        }
+        // .breadcrumbs__item::after {
+        //     filter: invert(100%);
+        // }
 
         .breadcrumbs__item {
             .breadcrumbs__link {
                 background-color: transparent;
-                color: var(--global-colors-white);
+                color: var(--global-colors-black);
             }
         }
         .breadcrumbs__item--active {
@@ -26,7 +26,7 @@
         // Content.
         .main-wrapper {
             width: 100%;
-            background-color: var(--global-colors-ash);
+            background-color: var(--global-colors-white);
 
             .container {
                 padding: 0 !important;
@@ -46,7 +46,7 @@
                         max-width: 85vw;
                         word-wrap: break-word;
                         @include media(tablet up) {
-                            max-width: 40vw;    
+                            max-width: 40vw;
                         }
                         @include media(desktop up) {
                             max-width: 20vw;
@@ -99,6 +99,7 @@
             article {
                 max-width: 70ch;
                 margin: 0 auto;
+                color: var(--global-colors-black);
 
                 h1 {
                     @extend .heading-size--huge;

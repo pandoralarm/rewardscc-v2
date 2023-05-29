@@ -62,7 +62,7 @@
         &__title {
             font-family: var(--global-font-family);
             letter-spacing: -2px;
-            color: var(--global-colors-white);
+            color: var(--global-colors-black);
         }
     }
     &__content {
@@ -84,7 +84,7 @@
     }
 
     &__item {
-        background-color: var(--global-colors-white);
+        // background-color: var(--global-colors-white);
         border-radius: 4px;
         text-align: left;
         padding: calc(var(--global-gutter) / 2);

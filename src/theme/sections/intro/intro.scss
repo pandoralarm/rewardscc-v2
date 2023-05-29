@@ -2,7 +2,7 @@
     &__title {
         font-size: var(--global-font-size-big);
         line-height: 1.13;
-        color: var(--global-colors-white);
+        color: var(--global-colors-black);
         font-weight: bold;
         letter-spacing: -1px;
         font-family: var(--global-font-family-alternative);
@@ -25,7 +25,7 @@
 
     &__content {
         @extend .paragraph-size--small;
-        color: var(--global-colors-white);
+        color: var(--global-colors-black);
         margin-bottom: 25px;
         padding-left: 75px;
         position: relative;
