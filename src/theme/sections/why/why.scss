@@ -1,4 +1,7 @@
 .shift-why {
+    @include media(desktop up) {
+        margin: 5% 0;
+    }
     &__shift-heading {
         max-width: 580px;
     }
@@ -7,6 +10,7 @@
         text-align: center;
         font-weight: 700;
         @include media(desktop up) {
+            font-size: 64px;
             text-align: left;
             margin-left: -30%;
         }
@@ -15,7 +19,10 @@
     .shift-heading__subtitle {
         text-align: center;
         color: var(--global-colors-black);
+        margin-top: 16px;
         @include media(desktop up) {
+            max-width: 550px;
+            font-size: var(--global-font-size-medium);
             text-align: left;
             margin-left: -30%;
             margin-right: 50%;

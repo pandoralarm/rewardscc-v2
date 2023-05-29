@@ -1,11 +1,11 @@
 .shift-intro {
     &__title {
-        font-size: var(--global-font-size-big);
-        line-height: 1.13;
+        font-size: 42px;
+        line-height: 1.2;
         color: var(--global-colors-black);
-        font-weight: bold;
+        font-weight: 600;
         letter-spacing: -1px;
-        font-family: var(--global-font-family-alternative);
+        font-family: var(--global-font-family);
         z-index: 1;
         position: relative;
         // transform: scale(0.65) translateX(-25%) translateY(-10%);
@@ -18,6 +18,8 @@
         }
 
         @include media(desktop up) {
+            font-size: 92px;
+            line-height: 110px;
             transform: scale(0.65) translateX(-25%) translateY(-10%);
             font-size: var(--global-font-size-gigantic);
         }
@@ -30,13 +32,15 @@
         padding-left: 75px;
         position: relative;
         max-width: 550px;
+        font-family: var(--global-font-family-alternative);
 
         @include media(tablet up) {
-            transform: scale(0.85) translateX(15%) translateY(-200%);
+            transform: scale(0.85) translateX(15%) translateY(-175%);
             max-width: 45%;
         }
         @include media(desktop up) {
-            transform: scale(0.85) translateX(-10%) translateY(-320%);
+            font-size: 18px;
+            transform: scale(0.85) translateX(-10%) translateY(-225%);
             max-width: 50%;
         }
 
@@ -71,11 +75,14 @@
     }
 
     .shift-button {
+        font-family: var(--global-font-family);
         @include media(tablet up) {
-            transform: scale(0.9) translateX(50%) translateY(-300%);
+            font-size: 16px;
+            line-height: 26px;
+            transform: scale(0.9) translateX(50%) translateY(-260%);
         }
         @include media(desktop up) {
-            transform: scale(0.9) translateX(10%) translateY(-300%);
+            transform: scale(0.9) translateX(10%) translateY(-260%);
         }
     }
 

@@ -3,6 +3,21 @@
 
     .shift-heading {
         color: var(--global-colors-black) !important;
+
+        &__title {
+            font-family: var(--global-font-family);
+            @include media(tablet up) {
+                font-size: 24px;
+                margin-bottom: 16px;
+            }
+        }
+
+        &__subtitle {
+            font-family: var(--global-font-family-alternative);
+            @include media(tablet up) {
+                font-size: 16px;
+            }
+        }
     }
 
     &__content {

@@ -1,9 +1,14 @@
 .markdown {
+    @include media(desktop up) {
+        font-size: 16px !important;
+    }
     > p {
         @extend .paragraph-size--medium;
         font-weight: 500;
         color: var(--global-colors-black);
-
+        @include media(desktop up) {
+            font-size: 16px !important;
+        }
         code {
             padding: 2px 5px;
         }

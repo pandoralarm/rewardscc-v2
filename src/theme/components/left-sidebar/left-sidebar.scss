@@ -1,7 +1,7 @@
 %left-sidebar {
     width: var(--global-sidebar-width);
     padding: 0;
-    background-color: var(--global-colors-white);
+    background-color: var(--global-colors-nebula);
     display: none;
     margin-top: calc(-1 * var(--global-header-height));
     border-right: none;
@@ -32,6 +32,12 @@
         background-color: var(--global-colors-cararra);
         padding: var(--global-docs-top-spacing) var(--global-gutter);
 
+        &__link {
+            @include media(desktop up) {
+                font-size: 16px !important;
+            }
+        }
+
         &--show {
             padding: var(--global-gutter);
         }
@@ -44,12 +50,12 @@
             margin-left: -12px;
 
             a.menu__link--active {
-                color: var(--global-colors-white);
-                background-color: var(--global-colors-nebula);
+                color: var(--global-colors-nebula);
+                background-color: transparent;
                 padding-left: 12px;
                 margin-left: -12px;
                 &:hover {
-                    color: var(--global-colors-white);
+                    color: var(--global-colors-nebula);
                     opacity: 1;
                 }
             }
@@ -57,21 +63,21 @@
             .menu__link--sublist {
                 color: var(--global-colors-black);
                 &.menu__link--active {
-                    color: var(--global-colors-black);
+                    color: var(--global-colors-nebula);
                 }
             }
 
             .menu__list-item-collapsible {
                 transition: all 0.3s ease;
                 &:hover {
-                    background-color: var(--global-colors-nebula);
+                    background-color: transparent;
                     padding-left: 12px;
                     margin-left: -12px;
                 }
 
                 &--active {
                     color: var(--global-colors-bla);
-                    background-color: var(--global-colors-nebula);
+                    background-color: transparent;
                     padding-left: 12px;
                     margin-left: -12px;
                 }
@@ -103,9 +109,9 @@
                 &:hover {
                     padding-left: 12px;
                     margin-left: -12px;
-                    background-color: var(--global-colors-nebula);
+                    background-color: transparent;
 
-                    color: var(--global-colors-white);
+                    color: var(--global-colors-nebula);
                 }
             }
 
@@ -116,11 +122,11 @@
                     color: var(--global-colors-black);
                     font-family: var(--global-font-family-alternative);
                     &:hover {
-                        color: var(--global-colors-white);
+                        color: var(--global-colors-nebula);
                         opacity: 1;
                     }
                     &--active {
-                        color: var(--global-colors-black);
+                        color: var(--global-colors-nebula);
                     }
                     &::after {
                         background-size: 24px;

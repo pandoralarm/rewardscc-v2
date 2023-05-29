@@ -14,9 +14,29 @@
     @include media(tablet up) {
         flex-direction: row;
     }
-    .shift-heading__title {
+    .shift-heading {
         font-weight: 700;
         margin-bottom: 22px;
+
+        &__title {
+            font-family: var(--global-font-family);
+            @include media(desktop up) {
+                margin-bottom: 32px;
+                // font-size: 64px;
+            }
+        }
+
+        &__subtitle {
+            font-family: var(--global-font-family-alternative);
+            @include media(desktop up) {
+                font-size: 18px;
+            }
+        }
+
+        @include media(desktop up) {
+            margin-right: 200px;
+            // max-width: 450px;
+        }
     }
     &__heading {
         max-width: 500px;
@@ -25,6 +45,7 @@
             transform: scale(0.95);
         }
         @include media(desktop up) {
+            max-width: 500px;
             transform: scale(0.5);
         }
     }

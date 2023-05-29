@@ -48,7 +48,7 @@
 
         @include media(tablet up) {
             padding-bottom: 75px;
-            transform: translateX(10%);
+            // transform: translateX(10%);
         }
 
         &__align {
@@ -73,12 +73,13 @@
         width: 80%;
         // justify-self: center;
         @include media(tablet up) {
-            margin-left: 10%;
+            // margin-left: 10%;
             margin: 0 auto;
         }
 
         @include media(desktop up) {
-            margin-left: 10%;
+            // margin-left: 10%;
+            width: 120%;
             margin: 0 auto;
         }
     }

@@ -11,7 +11,7 @@
         transform: scale(1.2);
         @include media(tablet up) {
             margin-top: 0;
-            transform: scale(1);
+            transform: scale(1.2);
         }
     }
 
@@ -42,10 +42,15 @@
             }
 
             .shift-heading__title {
+                font-weight: 600;
+                font-family: var(--global-font-family);
                 color: var(--global-colors-black);
                 font-size: 32px;
                 @include media(tablet up) {
                     font-size: 48px;
+                }
+                @include media(desktop up) {
+                    font-size: 64px;
                 }
             }
 
@@ -59,6 +64,9 @@
                 @include media(tablet up) {
                     margin-bottom: 0;
                 }
+                @include media(desktop up) {
+                    font-size: 18px;
+                }
             }
         }
     }
@@ -66,7 +74,6 @@
     &__foot {
         color: var(--global-colors-black);
         font-size: var(--global-font-size-small);
-        background-color: var(--global-colors-black);
         font-weight: 500;
         line-height: 1.44;
 
@@ -107,6 +114,12 @@
                 flex-direction: column;
 
                 @include media(tablet up) {
+                    text-align: right;
+                    flex-direction: row;
+                }
+                @include media(desktop up) {
+                    position: relative;
+                    right: -20%;
                     text-align: right;
                     flex-direction: row;
                 }

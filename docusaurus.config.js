@@ -1,11 +1,11 @@
 module.exports = {
-    title: "Eightshift Development kit",
+    title: "RewardsCC",
     tagline: "The most complete and current API for searching and discovering detailed information about credit cards.",
     url: "https://rewardscc.com",
     baseUrl: "/",
     favicon: "img/favicon.png",
-    organizationName: "infinum",
-    projectName: "eightshift-docs",
+    organizationName: "rewardscc",
+    projectName: "rewardscc-docs",
     staticDirectories: ["static"],
     scripts: [
         {
