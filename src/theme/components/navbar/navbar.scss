@@ -1,0 +1,114 @@
+#__docusaurus .navbar {
+    $this: &;
+    font-family: var(--global-font-family-alternative);
+    box-shadow: none;
+    height: var(--global-header-height);
+    background-color: var(--global-colors-black);
+    padding: 0;
+    display: flex;
+    box-shadow: 0 2px 3px var(--global-shadow-elephant);
+
+    &__inner {
+        padding: 0 var(--global-gutter);
+        margin: 0 auto;
+    }
+
+    &__link {
+        @extend .paragraph-size--small;
+        font-weight: 400;
+        padding: 0 32px;
+        transition: {
+            property: color;
+            timing-function: ease-out;
+            duration: 0.3s;
+        }
+        color: var(--global-colors-white);
+
+        &:hover {
+            color: var(--global-colors-nebula);
+        }
+
+        &.button {
+            border: 2px solid var(--global-colors-nebula);
+            border-radius: 22px;
+            padding: 6px 32px;
+        }
+    }
+
+    &__brand {
+        height: auto;
+        margin: 0;
+    }
+
+    &__logo {
+        height: auto;
+        max-width: 156px;
+        margin: 0;
+
+        img {
+            display: block;
+        }
+    }
+
+    &__search {
+        height: 48px;
+        padding-left: 20px;
+        display: none;
+
+        @include media(tablet up) {
+            // display: block;
+            display: none;
+        }
+    }
+
+    &__search-input {
+        display: none;
+        width: 122px;
+        height: 100%;
+        background-color: var(--global-colors-white);
+        padding-left: 40px;
+        padding-right: 20px;
+        font-family: var(--global-font-family);
+        @extend .paragraph-size--medium;
+        font-weight: 500;
+        color: var(--global-colors-nevada);
+        transition: {
+            property: width;
+            timing-function: ease-out;
+            duration: 0.3s;
+        }
+
+        &:focus {
+            width: 300px;
+            transition: {
+                property: width;
+                timing-function: ease-out;
+                duration: 0.3s;
+            }
+        }
+
+        &::placeholder {
+            color: var(--global-colors-nevada);
+        }
+    }
+
+    &__toggle {
+        background-color: var(--global-colors-white);
+        border-radius: 50%;
+        width: var(--global-mobile-nav-button-size);
+        height: var(--global-mobile-nav-button-size);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 9px;
+        margin-right: 20px;
+
+        @include media(desktop up) {
+            display: none;
+        }
+
+        &:focus {
+            outline: none;
+        }
+    }
+}

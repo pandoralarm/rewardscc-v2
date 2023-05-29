@@ -1,0 +1,36 @@
+.shift-why {
+    &__shift-heading {
+        max-width: 580px;
+    }
+
+    .shift-heading__title {
+        font-weight: 700;
+        margin-left: -30%;
+    }
+
+    .shift-heading__subtitle {
+        margin-left: -30%;
+        margin-right: 50%;
+    }
+
+    &__image {
+        max-width: 120%;
+        height: auto;
+        margin-left: -10%;
+
+        &--desktop {
+            display: none;
+
+            @include media(tablet up) {
+                display: block;
+            }
+        }
+        &--mobile {
+            display: block;
+
+            @include media(tablet up) {
+                display: none;
+            }
+        }
+    }
+}
