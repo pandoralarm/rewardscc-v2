@@ -5,6 +5,8 @@
         color: var(--global-colors-black) !important;
 
         &__title {
+            margin-bottom: 12px;
+            font-size: 24px;
             font-family: var(--global-font-family);
             @include media(tablet up) {
                 font-size: 24px;
