@@ -7,6 +7,10 @@
     background-position-y: 100%;
     background-size: 50%;
 
+    .shift-container {
+        padding: 0;
+    }
+
     .title-container {
         display: flex;
 
@@ -88,8 +92,9 @@
         // background-color: var(--global-colors-white);
         border-radius: 4px;
         text-align: left;
-        padding: calc(var(--global-gutter) / 2);
-        padding-left: 0;
+        // padding: calc(var(--global-gutter) / 2);
+        // padding-left: 0;
+        margin-top: 20px;
         margin-bottom: 30px;
 
         @include media(tablet up) {

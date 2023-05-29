@@ -42,7 +42,7 @@ export default function GetStarted() {
 
         return (
             <div className={`${component}__item ${component}__item--${type}`} key={index}>
-                <a className={`${component}__link`} href={link}>
+                <a className={`${component}__link`}>
                     <div className={`${component}__icon`}>
                         {/* <img className={`${component}__icon-bg`} src={bg} /> */}
                         <img className={`${component}__icon-img`} src={icon} style={{ marginLeft: "30%" }} />

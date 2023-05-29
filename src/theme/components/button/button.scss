@@ -8,7 +8,7 @@
     text-align: center;
     cursor: pointer;
     border-radius: 50px;
-    text-transform: uppercase;
+    // text-transform: uppercase;
     padding: 5px 45px;
     transition: {
         property: color, background-color, border-color;
@@ -31,7 +31,8 @@
 
             &:hover {
                 background-color: var(--global-colors-white);
-                color: var(--global-colors-white);
+                color: var(--global-colors-black);
+                box-shadow: 0 0 5px 1px var(--global-shadow-elephant);
             }
         }
     }
