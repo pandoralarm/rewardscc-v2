@@ -8,7 +8,10 @@
     background-size: 50%;
 
     .shift-container {
-        padding: 0;
+        padding: 20% 0;
+        @include media(desktop up) {
+            padding: 10% 0;
+        }
     }
 
     .title-container {
