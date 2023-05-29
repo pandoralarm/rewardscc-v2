@@ -42,9 +42,9 @@
         color: var(--global-colors-black);
         margin-top: 20px;
 
-        // &--default {
-        //     @extend .heading-size--huge;
-        // }
+        &--default {
+            @extend .heading-size--small;
+        }
 
         &--medium {
             @extend .heading-size--big;

@@ -8,6 +8,10 @@
     display: flex;
     box-shadow: 0 2px 3px var(--global-shadow-elephant);
 
+    &-sidebar {
+        background-color: var(--global-colors-black);
+    }
+
     &__inner {
         padding: 0 var(--global-gutter);
         margin: 0 auto;
@@ -36,6 +40,7 @@
     }
 
     &__brand {
+        background-color: var(--global-colors-black);
         height: auto;
         margin: 0;
     }
@@ -93,7 +98,9 @@
     }
 
     &__toggle {
-        background-color: var(--global-colors-white);
+        position: absolute;
+        right: 0;
+        background-color: var(--global-colors-black);
         border-radius: 50%;
         width: var(--global-mobile-nav-button-size);
         height: var(--global-mobile-nav-button-size);

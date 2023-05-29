@@ -1,7 +1,19 @@
 .panels {
+    color: var(--global-colors-black) !important;
     display: flex;
     gap: 5vw;
     padding: 20vh 15vw;
+    flex-direction: column;
+
+    .shift-container {
+        @include media(tablet) {
+            padding: 0;
+        }
+    }
+
+    @include media(tablet up) {
+        flex-direction: row;
+    }
     .shift-heading__title {
         font-weight: 700;
         margin-bottom: 22px;
@@ -9,6 +21,12 @@
     &__heading {
         max-width: 500px;
         transform: scale(0.5);
+        @include media(tablet up) {
+            transform: scale(0.95);
+        }
+        @include media(desktop up) {
+            transform: scale(0.5);
+        }
     }
 
     &__image {

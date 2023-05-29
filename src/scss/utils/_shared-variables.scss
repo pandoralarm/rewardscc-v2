@@ -33,6 +33,7 @@ https://github.com/infinum/eightshift-frontend-libs/blob/develop/styles/scss/_co
     --global-colors-charade: #282a36;
     --global-colors-elephant: #0c3636;
     --global-colors-nebula: #fb1ee6;
+    --global-colors-nebula-light: #fce9ff;
     --global-colors-nebula-dark: #fb1ee58b;
     --global-colors-cape: #4b5555;
     --global-colors-nevada: #656f6f;
@@ -46,6 +47,7 @@ https://github.com/infinum/eightshift-frontend-libs/blob/develop/styles/scss/_co
     --global-colors-white: #ffffff;
     --global-colors-black: #000000;
     --global-colors-ash: #161616;
+    --global-colors-value: #3db39e;
 
     --global-shadow-elephant: rgba(0, 0, 0, 0.1);
 
@@ -79,7 +81,7 @@ https://github.com/infinum/eightshift-frontend-libs/blob/develop/styles/scss/_co
         line-height: var(--line-height, 1.2);
 
         @include media(tablet up) {
-            --font-size: var(--global-font-size-huge);
+            --font-size: var(--global-font-size-larger);
             --line-height: 1.03;
         }
     }

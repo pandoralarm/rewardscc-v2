@@ -1,14 +1,26 @@
 .shift-get-started {
     $this: &;
 
+    .shift-heading {
+        color: var(--global-colors-black) !important;
+    }
+
     &__content {
         display: flex;
         flex-wrap: wrap;
         // margin: 0 calc(-1 * calc(var(--global-gutter) / 2)) -90px;
         // background-color: blue;
-        width: 150%;
-        // margin: 0 -25%;
-        margin-left: -25%;
+        width: 80%;
+        margin: 0 auto;
+
+        @include media(tablet up) {
+            width: 100%;
+            margin: 0 auto;
+        }
+        @include media(desktop up) {
+            width: 150%;
+            margin-left: -25%;
+        }
     }
 
     &__item {

@@ -65,11 +65,11 @@ export default function Features() {
         <div className={component}>
             <Container componentClass={component} size={"medium"}>
                 <div className="title-container">
-                    <img src={bg.wl} style={{ position: "absolute", transform: "scale(0.8) translate(0, -30%)" }} />
+                    <img src={bg.wl} className="wing__left" />
 
                     <Heading componentClass={component} title={"Your Gateway to Comprehensive Credit Card Information"} titleSize={"medium"} align={"center"} />
 
-                    <img src={bg.wr} style={{ position: "relative", transform: "scale(0.8) translate(0, -30%)" }} />
+                    <img src={bg.wr} className="wing__right" />
                 </div>
 
                 <div className={`${component}__content`}>{items}</div>

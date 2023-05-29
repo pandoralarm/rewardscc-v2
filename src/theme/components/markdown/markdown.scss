@@ -41,10 +41,10 @@
 
     blockquote {
         @extend .paragraph-size--medium;
-        background-color: var(--global-colors-egg);
+        background-color: var(--global-colors-white);
         border-color: var(--global-colors-mandy);
         font-weight: 500;
-        color: var(--global-colors-white);
+        color: var(--global-colors-black);
         padding: 10px;
         border-radius: var(--global-border-radius);
 
@@ -56,15 +56,37 @@
 
     code {
         @extend .paragraph-size--medium;
-        background-color: var(--global-colors-charade);
+        background-color: transparent;
         font-family: var(--global-block-family-code);
         font-weight: 500;
         border-radius: var(--global-border-radius);
         color: var(--global-colors-white);
     }
 
+    pre {
+        background-color: var(--global-colors-white);
+    }
     pre code {
         padding: 20px;
+        color: var(--global-colors-black);
+
+        span {
+            color: var(--global-colors-black) !important;
+        }
+
+        .token {
+            &.punctuation {
+                color: var(--global-colors-black) !important;
+            }
+
+            &.property {
+                color: var(--global-colors-nebula) !important;
+            }
+
+            &.string {
+                color: var(--global-colors-value) !important;
+            }
+        }
     }
 
     div[class^="codeBlock_"] {
@@ -75,5 +97,6 @@
         @extend .paragraph-size--small;
         font-weight: 500;
         font-family: var(--global-block-family-code);
+        color: var(--global-colors-black) !important;
     }
 }

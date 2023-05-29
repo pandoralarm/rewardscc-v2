@@ -17,27 +17,18 @@ export default function Footer() {
                     subtitle={"Find out that our sign-up bonus endpoints give you the ability to search through bank's offerings for airline miles, hotel point, and cash bonuses."}
                     subtitleSize="small"
                 />{" "}
-                <a href="https://infinum.com/" target="_blank" rel="noopener noreferrer" rel="nofollow" className={`${component}__button`}>
+                <a href="/docs" target="_blank" rel="noopener noreferrer" rel="nofollow" className={`${component}__button`}>
                     <div>Explore Now!</div>
                 </a>
             </Container>
             <Container componentClass={`${component}__foot`} spacingBottom={"small"} spacingTop={"none"}>
                 <div className={`${component}__foot__columns-foot`}>
                     <div className={`${component}__foot__column-foot ${component}__foot__column--left-foot`}>
-                        Made with &hearts; by &nbsp; Rewardscc
-                        {" team | "}
-                        <a href={useBaseUrl("/sitemap.xml")} target="_blank" rel="noopener noreferrer" className={`${component}__link`}>
-                            {"Sitemap"}
-                        </a>
+                        Made with &hearts; by Rewardscc
+                        {" team"}
                     </div>
                     <div className={`${component}__foot__column-foot ${component}__foot__column--right-foot`}>
-                        <span className={`${component}__copy`}>{"© Eightshift. All rights reserved."}</span>
-                        <span className={`${component}__logo-wrap`}>
-                            {"Part of "}
-                            <a href="https://infinum.com/" target="_blank" rel="noopener noreferrer" rel="nofollow" className={`${component}__logo`}>
-                                <img src={useBaseUrl("img/ic-infinum-logo.svg")} />
-                            </a>
-                        </span>
+                        <span className={`${component}__copy`}>{"© Rewardscc. All rights reserved."}</span>
                     </div>
                 </div>
             </Container>

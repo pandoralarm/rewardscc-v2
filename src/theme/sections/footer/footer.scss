@@ -6,11 +6,24 @@
     background-position: bottom right;
     background-size: 40%;
 
+    &__button {
+        margin-top: 22px;
+        transform: scale(1.2);
+        @include media(tablet up) {
+            margin-top: 0;
+            transform: scale(1);
+        }
+    }
+
     .shift-container__inner {
         display: flex;
         align-items: center;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-between;
+        @include media(tablet up) {
+            flex-direction: row;
+            justify-content: space-between;
+        }
 
         &-inner-size--medium {
             padding: 0;
@@ -21,18 +34,31 @@
             gap: 22px;
             flex-direction: column;
             color: var(--global-colors-white);
-            max-width: 30vw;
             padding-bottom: 0;
+            text-align: center;
+            @include media(tablet up) {
+                max-width: 30vw;
+                text-align: left;
+            }
 
             .shift-heading__title {
-                font-size: 48px;
                 color: var(--global-colors-white);
+                font-size: 32px;
+                @include media(tablet up) {
+                    font-size: 48px;
+                }
             }
 
             .shift-heading__subtitle {
                 color: var(--global-colors-white);
                 font-size: 12px;
                 font-family: var(--global-font-family-alternative);
+                line-height: 1.6;
+                margin-bottom: 22px;
+
+                @include media(tablet up) {
+                    margin-bottom: 0;
+                }
             }
         }
     }
@@ -48,7 +74,7 @@
             color: var(--global-colors-white);
             width: 100%;
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
             justify-content: space-between;
             margin: 0 calc(-1 * calc(var(--global-gutter) / 2));
 
@@ -60,8 +86,10 @@
 
         &__column-foot {
             padding-left: calc(var(--global-gutter) / 2);
+            text-align: center;
 
             @include media(tablet up) {
+                text-align: left;
                 padding-bottom: 0;
             }
 

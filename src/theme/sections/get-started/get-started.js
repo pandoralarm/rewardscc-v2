@@ -47,7 +47,7 @@ export default function GetStarted() {
                         {/* <img className={`${component}__icon-bg`} src={bg} /> */}
                         <img className={`${component}__icon-img`} src={icon} style={{ marginLeft: "30%" }} />
                     </div>{" "}
-                    <Heading componentClass={component} title={title} titleSize={"small"} subtitle={subtitle} style={style} />
+                    <Heading componentClass={component} title={title} titleSize={"default"} subtitle={subtitle} style={style} />
                     {/* <div className={`${component}__label`} dangerouslySetInnerHTML={{ __html: label }}></div> */}
                     {/* <Arrow componentClass={component} /> */}
                 </a>
@@ -58,7 +58,7 @@ export default function GetStarted() {
     return (
         <div className={component}>
             <Container componentClass={component} size={"small"} style={{ padding: "40px" }}>
-                <Heading componentClass={component} title={"Unlock the Power of Credit Card Data with our Extensive API Suite"} titleSize={"medium"} />
+                <Heading componentClass={component} title={"Unlock the Power of Credit Card Data with our Extensive API Suite"} titleSize={"medium"} subtitleSize={"small"} />
                 <div className={`${component}__content`}>{items}</div>
             </Container>
         </div>
