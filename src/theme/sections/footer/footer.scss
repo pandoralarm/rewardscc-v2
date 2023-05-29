@@ -14,9 +14,9 @@
         transition: all 0.3s ease;
         transform: scale(1);
         &:hover {
-            background-color: var(--global-colors-white);
-            color: var(--global-colors-black);
-            box-shadow: 0 0 5px 1px var(--global-shadow-elephant);
+            background-color: var(--global-colors-nebula-hover);
+            color: var(--global-colors-white);
+            text-decoration: none;
         }
         @include media(tablet up) {
             width: 35%;

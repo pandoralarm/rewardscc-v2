@@ -117,7 +117,7 @@
 
             .theme-doc-sidebar-item-category-level-1 {
                 > div > a.menu__link {
-                    @extend .paragraph-size--default;
+                    // @extend .paragraph-size--default;
                     font-weight: bold;
                     color: var(--global-colors-black);
                     font-family: var(--global-font-family-alternative);

@@ -10,11 +10,7 @@
     border-radius: 50px;
     // text-transform: uppercase;
     padding: 5px 45px;
-    transition: {
-        property: color, background-color, border-color;
-        timing-function: ease-out;
-        duration: 0.3s;
-    }
+    transition: all 0.3s ease;
 
     &:hover {
         text-decoration: none;
@@ -30,9 +26,10 @@
             color: var(--global-colors-white);
 
             &:hover {
-                background-color: var(--global-colors-white);
-                color: var(--global-colors-black);
-                box-shadow: 0 0 5px 1px var(--global-shadow-elephant);
+                background-color: var(--global-colors-nebula-hover);
+                color: var(--global-colors-white);
+                // box-shadow: 0 0 5px 1px var(--global-shadow-elephant);
+                // filter: contrast(110%);
             }
         }
     }

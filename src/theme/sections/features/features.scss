@@ -70,6 +70,23 @@
             font-family: var(--global-font-family);
             letter-spacing: -2px;
             color: var(--global-colors-black);
+            font-weight: 600;
+            text-align: left;
+            max-width: 70%;
+            margin: 0 auto;
+
+            @include media(tablet up) {
+                text-align: center;
+                padding-bottom: 75px;
+                // transform: translateX(10%);
+            }
+
+            @include media(desktop up) {
+                max-width: 100%;
+                text-align: center;
+                padding-bottom: 75px;
+                // transform: translateX(10%);
+            }
         }
     }
     &__content {
@@ -141,7 +158,8 @@
         font-weight: bold;
         padding: 12px 0;
         color: var(--global-colors-black);
-        font-family: var(--global-font-family-alternative);
+        font-family: var(--global-font-family);
+
         // margin-bottom: 15px;
         padding-left: 20px;
         position: relative;
@@ -163,6 +181,9 @@
         }
         @include media(tablet up) {
             max-width: 410px;
+        }
+        @include media(tablet up) {
+            font-size: 28px;
         }
 
         &::before {
@@ -204,6 +225,10 @@
 
         @include media(tablet up) {
             max-width: 410px;
+        }
+        @include media(desktop up) {
+            max-width: 410px;
+            font-size: 16px;
         }
     }
 }

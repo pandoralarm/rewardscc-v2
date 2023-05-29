@@ -80,6 +80,9 @@
                 .row {
                     margin: 0;
                     // display: block;
+                    @include media(desktop up) {
+                        margin-left: -5%;
+                    }
                 }
 
                 .col {
@@ -102,9 +105,10 @@
                 color: var(--global-colors-black);
 
                 h1 {
-                    @extend .heading-size--huge;
+                    // @extend .heading-size--huge;
+                    font-size: 42px;
                     margin-top: 0;
-                    margin-bottom: 20px;
+                    margin-bottom: 32px;
                 }
 
                 h2 {

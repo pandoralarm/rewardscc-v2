@@ -27,7 +27,7 @@
             font-family: var(--global-font-family);
             @include media(desktop up) {
                 margin-bottom: 32px;
-                // font-size: 64px;
+                font-size: 64px;
             }
         }
 

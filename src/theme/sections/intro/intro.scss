@@ -2,7 +2,7 @@
     &__title {
         font-size: 42px;
         line-height: 1.2;
-        color: var(--global-colors-black);
+        color: var(--global-colors-elephant);
         font-weight: 600;
         letter-spacing: -1px;
         font-family: var(--global-font-family);
@@ -22,6 +22,7 @@
             line-height: 110px;
             transform: scale(0.65) translateX(-25%) translateY(-10%);
             font-size: var(--global-font-size-gigantic);
+            padding: 10% 0;
         }
     }
 
@@ -40,7 +41,7 @@
         }
         @include media(desktop up) {
             font-size: 18px;
-            transform: scale(0.85) translateX(-10%) translateY(-225%);
+            transform: scale(0.85) translateX(-10%) translateY(-400%);
             max-width: 50%;
         }
 
@@ -82,7 +83,7 @@
             transform: scale(0.9) translateX(50%) translateY(-260%);
         }
         @include media(desktop up) {
-            transform: scale(0.9) translateX(10%) translateY(-260%);
+            transform: scale(0.9) translateX(10%) translateY(-400%);
         }
     }
 
