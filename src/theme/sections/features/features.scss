@@ -70,6 +70,7 @@
             font-family: var(--global-font-family);
             letter-spacing: -2px;
             color: var(--global-colors-black);
+            font-size: 32px;
             font-weight: 600;
             text-align: left;
             max-width: 70%;
@@ -154,7 +155,8 @@
     }
 
     &__title {
-        @extend .paragraph-size--large;
+        // @extend .paragraph-size--large;
+        font-size: 24px;
         font-weight: bold;
         padding: 12px 0;
         color: var(--global-colors-black);
@@ -183,7 +185,7 @@
             max-width: 410px;
         }
         @include media(desktop up) {
-            font-size: 40px;
+            font-size: 32px;
         }
 
         &::before {

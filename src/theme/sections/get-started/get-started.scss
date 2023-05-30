@@ -16,7 +16,7 @@
         }
         &__title {
             margin-bottom: 12px;
-            font-size: 24px;
+            font-size: 32px;
             font-family: var(--global-font-family);
             font-weight: 600;
             @include media(tablet up) {
@@ -69,6 +69,7 @@
         }
 
         .shift-heading {
+            font-size: 24px;
             &__title {
                 @include media(desktop up) {
                     font-size: 32px;
