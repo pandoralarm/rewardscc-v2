@@ -1,9 +1,19 @@
 .shift-get-started {
     $this: &;
 
+    .shift-container {
+        &__inner {
+            @include media(desktop up) {
+                max-width: var(--global-container-medium);
+            }
+        }
+    }
+
     .shift-heading {
         color: var(--global-colors-black) !important;
-
+        @include media(desktop up) {
+            max-width: 100vw !important;
+        }
         &__title {
             margin-bottom: 12px;
             font-size: 24px;
@@ -14,7 +24,7 @@
                 margin-bottom: 16px;
             }
             @include media(desktop up) {
-                font-size: 42px;
+                font-size: 64px;
                 margin-bottom: 16px;
             }
         }
@@ -30,6 +40,7 @@
     &__content {
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
         // margin: 0 calc(-1 * calc(var(--global-gutter) / 2)) -90px;
         // background-color: blue;
         width: 80%;
@@ -40,6 +51,7 @@
             margin: 0 auto;
         }
         @include media(desktop up) {
+            gap: 92px;
             width: 150%;
             margin-left: -25%;
         }
@@ -52,7 +64,21 @@
         flex: 0 0 calc-grid-width(12);
 
         @include media(tablet up) {
-            flex: 0 0 calc-grid-width(4);
+            // max-width: 400px;
+            flex: 0 0 calc-grid-width(3);
+        }
+
+        .shift-heading {
+            &__title {
+                @include media(desktop up) {
+                    font-size: 32px;
+                }
+            }
+            &__subtitle {
+                @include media(desktop up) {
+                    font-size: 18px;
+                }
+            }
         }
 
         // &:nth-child(even) {
