@@ -18,11 +18,10 @@ export default function Footer() {
             <Container componentClass={`${component}__foot`} spacingBottom={"small"} spacingTop={"none"}>
                 <div className={`${component}__foot__columns-foot`}>
                     <div className={`${component}__foot__column-foot ${component}__foot__column--left-foot`}>
-                        Made with &hearts; by Rewardscc
-                        {" team"}
+                        <a href="mailto:rewardscc.info@gmail.com">rewardscc.info@gmail.com</a>
                     </div>
                     <div className={`${component}__foot__column-foot ${component}__foot__column--right-foot`}>
-                        <span className={`${component}__copy`}>{"© Rewardscc. All rights reserved."}</span>
+                        <span className={`${component}__copy`}>{"Copyright © 2023 Rewards Credit Card API"}</span>
                     </div>
                 </div>
             </Container>

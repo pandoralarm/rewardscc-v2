@@ -13,7 +13,7 @@ export default function Intro() {
     return (
         <div className={component}>
             <Container componentClass={component} size={"medium"} bgColor={"light"}>
-                <div className={`${component}__title`} dangerouslySetInnerHTML={{ __html: "Rewards<br/>Credit<br/>Card API" }}></div>
+                <div className={`${component}__title`} dangerouslySetInnerHTML={{ __html: "Rewards<br/>Credit Card<br/>API" }}></div>
                 <div className={`${component}__image`}>
                     {/* <img className={`${component}__image-bg`} src={useBaseUrl("img/ic-intro.svg")} /> */}
                     <img className={`${component}__image-img`} src={useBaseUrl("img/assets/hero.png")} />

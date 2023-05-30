@@ -115,6 +115,9 @@
         &__column-foot {
             padding-left: calc(var(--global-gutter) / 2);
             text-align: center;
+            a {
+                color: var(--global-colors-black) !important;
+            }
 
             @include media(tablet up) {
                 text-align: left;
