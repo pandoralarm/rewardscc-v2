@@ -19,10 +19,12 @@ body {
 
 .theme-admonition {
     background-color: var(--global-colors-nebula-light);
-    color: var(--global-colors-nebula);
+    color: var(--global-colors-white);
     border-left: var(--global-colors-nebula);
 
- 
+    svg {
+        filter: invert(100%) brightness(2000%);
+    }
 }
 
 .my-card {
