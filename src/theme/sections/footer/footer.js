@@ -15,7 +15,7 @@ export default function Footer() {
                     <div>Explore Now! &rarr;</div>
                 </a>
             </Container>
-            <Container componentClass={`${component}__foot`} spacingBottom={"small"} spacingTop={"none"} bgColor={'white'}>
+            <Container componentClass={`${component}__foot`} spacingBottom={"small"} spacingTop={"none"} bgColor={"white"}>
                 <div className={`${component}__foot__columns-foot`}>
                     <div className={`${component}__foot__column-foot ${component}__foot__column--left-foot`}>
                         <a href="mailto:rewardscc.info@gmail.com">rewardscc.info@gmail.com</a>

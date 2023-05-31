@@ -29,6 +29,7 @@
     }
 
     .menu {
+        z-index: 9;
         background-color: var(--global-colors-cararra);
         padding: var(--global-docs-top-spacing) var(--global-gutter);
 

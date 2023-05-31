@@ -66,6 +66,27 @@ module.exports = {
                 // },
             ],
         },
+        pagination: {
+            previousText: "Previous",
+            nextText: "Next",
+            className: "custom-pagination-class",
+        },
+        footer: {
+            style: "light",
+            links: [
+                {
+                    html: `
+                    <div class="custom-footer">
+                    <div class="spacer"></div>
+                    <div>
+                        <a href="mailto:rewardscc.info@gmail.com" target="_blank" rel="noreferrer noopener" aria-label="Deploys by Netlify"> rewardscc.info@gmail.com </a>
+                    </div>
+                    <div>Copyright © 2023 Rewards Credit Card API</div>
+                </div>                
+                  `,
+                },
+            ],
+        },
         prism: {
             theme: require("prism-react-renderer/themes/dracula"),
             additionalLanguages: ["php"],

@@ -120,17 +120,17 @@
                 color: var(--global-colors-black) !important;
             }
 
-            @include media(tablet up) {
-                text-align: left;
-                padding-bottom: 0;
-            }
+        @include media(tablet up) {
+            text-align: left;
+            padding-bottom: 0;
+        }
 
             &--left-foot {
                 text-align: center;
 
                 @include media(tablet up) {
                     text-align: left;
-                }
+            }
             }
 
             &--right-foot {
