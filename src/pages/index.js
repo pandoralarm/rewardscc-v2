@@ -8,7 +8,6 @@ import Panels from "../theme/sections/panels/panels";
 import GetStarted from "../theme/sections/get-started/get-started";
 import Features from "../theme/sections/features/features";
 import Footer from "../theme/sections/footer/footer";
-import Foot from "../theme/sections/foot/foot";
 import "@fontsource/plus-jakarta-sans";
 
 export default function Home() {

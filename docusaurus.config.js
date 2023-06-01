@@ -115,13 +115,7 @@ module.exports = {
                 theme: {
                     customCss: require.resolve("./src/scss/application.scss"),
                 },
-                blog: {
-                    blogTitle: "Tutorials and articles about Eightshift development kit",
-                    blogDescription: "Tutorials and articles about Eightshift development kit",
-                    blogSidebarTitle: "Latest posts",
-                    showReadingTime: true,
-                    postsPerPage: 6,
-                },
+
                 sitemap: {
                     changefreq: "weekly",
                     priority: 0.5,

@@ -4,7 +4,6 @@ import useBaseUrl from "@docusaurus/useBaseUrl";
 import Layout from "@theme/Layout";
 import GetStarted from "../theme/sections/get-started/get-started";
 import Footer from "../theme/sections/footer/footer";
-import Foot from "../theme/sections/foot/foot";
 
 export default function Start() {
     const context = useDocusaurusContext();
