@@ -27,7 +27,7 @@
     &__items {
         position: relative;
         top: 0;
-        max-height: 80px !important;
+        max-height: var(--global-header-height) !important;
 
         // background-color: blue;
     }
