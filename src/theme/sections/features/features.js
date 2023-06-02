@@ -68,7 +68,7 @@ export default function Features() {
 
     return (
         <div className={component}>
-            <Container componentClass={component} size={"medium"} bgColor={"light"}>
+            <Container componentClass={component} size={"medium"} bgColor={"white"}>
                 <div className="title-container">
                     {/* <img src={bg.wl} className="wing__left" /> */}
 
