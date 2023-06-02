@@ -1,6 +1,6 @@
 #__docusaurus .navbar {
     $this: &;
-    position: fixed !important;
+    position: sticky !important;
     top: 0 !important;
     width: 100% !important;
     font-family: var(--global-font-family-alternative);
