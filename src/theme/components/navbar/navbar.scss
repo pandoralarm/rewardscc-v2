@@ -27,6 +27,7 @@
     &__items {
         position: relative;
         top: 0;
+        max-height: 80px !important;
 
         // background-color: blue;
     }
