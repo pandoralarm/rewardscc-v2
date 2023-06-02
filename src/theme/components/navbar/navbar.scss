@@ -5,7 +5,7 @@
     width: 100% !important;
     font-family: var(--global-font-family-alternative);
     box-shadow: none;
-    height: var(--global-header-height);
+    height: var(--global-header-height) !important;
     background-color: var(--global-colors-white);
     padding: 0;
     display: flex;
@@ -28,7 +28,7 @@
         position: relative;
         top: 0;
 
-        background-color: blue;
+        // background-color: blue;
     }
 
     &__link {
