@@ -24,6 +24,13 @@
         margin: 0 auto;
     }
 
+    &__items {
+        position: relative;
+        top: 0;
+
+        background-color: blue;
+    }
+
     &__link {
         @extend .paragraph-size--small;
         font-weight: 400;
