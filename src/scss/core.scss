@@ -11,7 +11,7 @@ html {
 body {
     @include font-smoothing;
     font-family: var(--global-font-family);
-    color: var(--global-colors-white);
+    color: var(--global-colors-black);
     background-color: var(--global-colors-white);
     position: relative;
     overflow-x: hidden;
